@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Living Clean Landscapes</title>
+  <link rel="stylesheet" href="/mnt/data/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <img class="logo" src="/mnt/data/header.jpg" alt="Living Clean Landscapes logo" />
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <section class="contact-header">
+      <h1>Contact Us</h1>
+      <p class="lead">Ready to start? Call, email, or request a free estimate below.</p>
+    </section>
+
+    <section class="contact-grid">
+      <div class="contact-card">
+        <h2>Get in touch</h2>
+        <p><strong>Phone:</strong> (555) 555-5555</p>
+        <p><strong>Email:</strong> youremail@example.com</p>
+        <p><strong>Hours:</strong> Mon–Sat, 8:00 AM – 6:00 PM</p>
+      </div>
+
+      <div class="contact-card">
+        <h2>Request a quote</h2>
+        <!-- reuse lead form markup or integrate with backend -->
+        <form onsubmit="submitDemoForm(event)">
+          <label for="c-name">Name</label>
+          <input id="c-name" type="text" required>
+
+          <label for="c-phone">Phone</label>
+          <input id="c-phone" type="tel" required>
+
+          <label for="c-email">Email</label>
+          <input id="c-email" type="email">
+
+          <label for="c-message">Project details</label>
+          <textarea id="c-message" rows="4"></textarea>
+
+          <button class="btn primary" type="submit">Request Quote</button>
+          <p id="contactStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand">Living Clean Landscapes LLC</p>
+        <p class="muted">Licensed & insured</p>
+      </div>
+      <div class="footer-contact">
+        <p>Phone: (555) 555-5555</p>
+        <p>Email: youremail@example.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function submitDemoForm(e){
+      if(e) e.preventDefault();
+      // simple demo behavior — replace with production submission
+      var name = (document.getElementById('c-name') || document.getElementById('name')).value || '';
+      var phone = (document.getElementById('c-phone') || document.getElementById('phone')).value || '';
+      var status = document.getElementById('contactStatus') || document.getElementById('formStatus');
+      if(!name || !phone){ status.textContent = 'Please provide your name and phone number.'; return; }
+      status.textContent = 'Thanks — we will follow up shortly.';
+      // in production, POST to your backend or integrate a form service
+    }
+  </script>
+
+</body>
+</html>
