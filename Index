@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Living Clean Landscapes — Professional Landscaping & Property Services</title>
+  <link rel="stylesheet" href="/mnt/data/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <img class="logo" src="/mnt/data/header.jpg" alt="Living Clean Landscapes logo" />
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Premium landscaping, dependable service.</h1>
+        <p class="lead">From routine maintenance to full property transformation — beautiful, clean, and sustainable landscapes designed for lasting curb appeal.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="contact.html">Get a Free Estimate</a>
+          <a class="btn ghost" href="#services">Explore Services</a>
+        </div>
+      </div>
+
+      <aside class="quote-card" aria-labelledby="quoteTitle">
+        <h2 id="quoteTitle">Request a Free Quote</h2>
+        <p class="small-muted">Fast response • Transparent pricing • Licensed & insured</p>
+
+        <!-- Front-end demo form (use your backend or form service) -->
+        <form id="leadForm" class="lead-form" onsubmit="submitDemoForm(event)">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@email.com" />
+
+          <label for="service">Service needed</label>
+          <select id="service" name="service">
+            <option>Gardener / Garden Maintenance</option>
+            <option>Landscape Design & Installation</option>
+            <option>Tree Service (trimming/removal)</option>
+            <option>Sprinkler Installation & Repair</option>
+            <option>House Cleaning</option>
+            <option>Waste Management & Junk Removal</option>
+          </select>
+
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" rows="3" placeholder="Tell us a few details"></textarea>
+
+          <button class="btn primary" type="submit">Request Quote</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </aside>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h2>Recent projects</h2>
+      <div class="gallery">
+        <figure>
+          <img src="/mnt/data/photo1.jpg" alt="Well maintained garden with colorful planting bed" />
+          <figcaption>Garden maintenance & seasonal care</figcaption>
+        </figure>
+        <figure>
+          <img src="/mnt/data/photo2.jpg" alt="Cleaned yard with freshly mowed lawn and tidy borders" />
+          <figcaption>Lawn care & edging</figcaption>
+        </figure>
+        <figure>
+          <img src="/mnt/data/photo3.jpg" alt="Professional tree trimming in progress" />
+          <figcaption>Tree service & pruning</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="services" class="services-overview">
+      <h2>Our Services</h2>
+      <div class="services-grid" aria-label="Services">
+        <div class="service-card">
+          <h3>Garden & Plant Care</h3>
+          <p>Pruning, seasonal planting, fertilization and pest management for lasting garden health.</p>
+        </div>
+        <div class="service-card">
+          <h3>Lawn Care</h3>
+          <p>Mowing, edging, aeration, and feed schedules tailored to your lawn’s needs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Tree Service</h3>
+          <p>Safe trimming, canopy management, and removal by trained arborists.</p>
+        </div>
+        <div class="service-card">
+          <h3>Irrigation</h3>
+          <p>Sprinkler installation, programming, and repairs to conserve water and maintain healthy turf.</p>
+        </div>
+        <div class="service-card">
+          <h3>Landscape Contracting</h3>
+          <p>Design, hardscaping, and full installations to elevate your property’s curb appeal.</p>
+        </div>
+        <div class="service-card">
+          <h3>Waste Management</h3>
+          <p>Yard debris removal, junk hauling, and property clean-outs with responsible disposal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bot-embed" aria-label="Chatbot">
+      <!-- keep the existing chatbot embed if needed -->
+      <div id="chatbot-slot-home">
+        <script>
+          (function(e,a,d,i,c,t=a.createElement(d)){e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},t.src=i,t.async=1,a.body.insertAdjacentElement("beforeend",t)})(window,document,"script","https://widget.quickchat.ai/chat.js","_quickchat");
+          _quickchat("host", "app.quickchat.ai");
+          _quickchat("init", "aaz5sl5sy2");
+        </script>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand">Living Clean Landscapes LLC</p>
+        <p class="muted">Licensed & insured • Serving the local community</p>
+      </div>
+      <div class="footer-contact">
+        <p>Phone: (555) 555-5555</p>
+        <p>Email: youremail@example.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function submitDemoForm(e) {
+      if(e) e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var service = document.getElementById('service').value;
+      var status = document.getElementById('formStatus');
+      if(!name || !phone) { status.textContent = 'Please provide your name and phone number.'; return; }
+      var subject = encodeURIComponent('Quote Request — ' + service + ' — ' + name);
+      var body = encodeURIComponent('Name: ' + name + '\\nPhone: ' + phone + '\\nService: ' + service + '\\nMessage: ' + document.getElementById('message').value);
+      window.location.href = 'mailto:youremail@example.com?subject=' + subject + '&body=' + body;
+      status.textContent = 'Opening your email client to complete the request...';
+    }
+  </script>
+
+</body>
+</html>
