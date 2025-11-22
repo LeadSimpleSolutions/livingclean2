@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Living Clean Landscapes</title>
+  <link rel="stylesheet" href="/mnt/data/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <img class="logo" src="/mnt/data/header.jpg" alt="Living Clean Landscapes logo" />
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <section class="services-intro">
+      <h1>Professional Services</h1>
+      <p class="lead">Comprehensive property services — delivered with precision and care.</p>
+    </section>
+
+    <section class="service-list">
+      <article class="service-item">
+        <h2>Gardener & Garden Maintenance</h2>
+        <p>Pruning, seasonal planting, weed control, mulching and scheduled visits to keep your beds flourishing.</p>
+      </article>
+
+      <article class="service-item">
+        <h2>Lawn Care</h2>
+        <p>Mowing, edging, fertilization plans, aeration and tailored maintenance programs for healthy turf.</p>
+      </article>
+
+      <article class="service-item">
+        <h2>Tree Service</h2>
+        <p>Certified tree trimming, crown reduction, hazard mitigation, and safe removals when required.</p>
+      </article>
+
+      <article class="service-item">
+        <h2>Irrigation & Sprinklers</h2>
+        <p>Installation, seasonal programming, leak detection and efficient watering solutions to save water.</p>
+      </article>
+
+      <article class="service-item">
+        <h2>Landscape Contracting</h2>
+        <p>Design consultation, hardscape installation, plant selection, and project management from start to finish.</p>
+      </article>
+
+      <article class="service-item">
+        <h2>Waste Management & Junk Removal</h2>
+        <p>Quick, responsible removal of yard debris and unwanted items with proper disposal practices.</p>
+      </article>
+    </section>
+
+    <section class="gallery-sm">
+      <h3>Gallery</h3>
+      <div class="gallery">
+        <figure><img src="/mnt/data/photo1.jpg" alt="Garden care example"><figcaption>Garden care</figcaption></figure>
+        <figure><img src="/mnt/data/photo2.jpg" alt="Lawn care example"><figcaption>Lawn care</figcaption></figure>
+        <figure><img src="/mnt/data/photo3.jpg" alt="Tree service example"><figcaption>Tree service</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="brand">Living Clean Landscapes LLC</p>
+        <p class="muted">Licensed & insured</p>
+      </div>
+      <div class="footer-contact">
+        <p>Phone: (555) 555-5555</p>
+        <p>Email: youremail@example.com</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
